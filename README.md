@@ -36,16 +36,16 @@ Install the job submission tool [grid-control](https://ekptrac.physik.uni-karlsr
     cd /Path/To/Your/Software
     svn co https://ekptrac.physik.uni-karlsruhe.de/svn/grid-control/tags/stable/grid-control
    
-Prepare a working directory for your job submission and submit a single test job
+Prepare a working directory for your job submission and submit a single test job to your login machine:
 
     mkdir /Path/To/Your/WorkingDirectory
     cd /Path/To/Your/WorkingDirectory
     python $CMSSW_BASE/src/FastSimulation/HadShowerTuning/python/prepareJobs.py
     /Path/To/Your/Software/grid-control/go.py -icG job.cfg
 
-And find the resulting root file under /Path/To/Your/WorkingDirectory/results
+Find the resulting root file under /Path/To/Your/WorkingDirectory/results
 
-Find and edit the configuration of the job submission under /Path/To/Your/WorkingDirectory/job.cfg
+Find and edit the configuration for the job submission under /Path/To/Your/WorkingDirectory/job.cfg
 Pay special attention to:
    * all options under [parameters]
    * all options marked with !!!
