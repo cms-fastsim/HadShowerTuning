@@ -47,6 +47,7 @@ repeat = 40
 
 [local]
 wms = Host             ; !!! RUN ON HOST FOR TESTING. COMMENT OUT TO RUN ON BATCH SYSTEM
+#queue = 8nh           ; !!! UNCOMMENT WHEN RUNNING ON LXPLUS
 """.format(CMSSW_BASE=os.environ["CMSSW_BASE"],PWD=os.environ["PWD"])
 
 FILE = open("job.cfg","w")
