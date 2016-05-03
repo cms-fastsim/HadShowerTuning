@@ -1,0 +1,7 @@
+<use name="FWCore/Framework"/>
+<use name="FWCore/PluginManager"/>
+<use name="FWCore/ParameterSet"/>
+<use   name="geant4core"/>
+<use   name="hepmc"/>
+<use name="FastSimulation/HadShowerTuning"/>
+<flags EDM_PLUGIN="1"/>

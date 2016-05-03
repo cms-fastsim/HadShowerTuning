@@ -1,0 +1,122 @@
+
+:ELEM W W 74 183.84
+:ELEM Pb Pb 82 207.2
+:ELEM O O 8 15.999
+:MIXT_BY_NATOMS lead-tungstate 8.3*g/cm3 3
+   W 1
+   Pb 1
+   O 4
+
+// a zero rotation
+:ROTM R0 0. 0. 0.
+
+// world volume
+:VOLU world BOX 1000*cm 1000.*cm 1000.*cm G4_AIR
+
+:VOLU front BOX 200*cm 200*cm 129.0*cm G4_AIR 
+:PLACE front 1 world R0 0.*cm 0.*cm 129.0*cm
+
+:VOLU eb BOX 200*cm 200*cm 23.0*cm lead-tungstate 
+:PLACE eb 1 world R0 0.*cm 0.*cm 281.0*cm
+
+:VOLU gap BOX 200*cm 200*cm 25.7*cm G4_AIR 
+:PLACE gap 1 world R0 0.*cm 0.*cm 329.7*cm
+
+:VOLU hb_sci_0 BOX 200*cm 200*cm 0.9*cm G4_PLASTIC_SC_VINYLTOLUENE 
+:PLACE hb_sci_0 1 world R0 0.*cm 0.*cm 356.3*cm
+
+:VOLU hb_abs_0 BOX 200*cm 200*cm 4.0*cm G4_Fe 
+:PLACE hb_abs_0 1 world R0 0.*cm 0.*cm 361.2*cm
+
+:VOLU hb_sci_1 BOX 200*cm 200*cm 0.37*cm G4_PLASTIC_SC_VINYLTOLUENE 
+:PLACE hb_sci_1 1 world R0 0.*cm 0.*cm 365.57*cm
+
+:VOLU hb_abs_1 BOX 200*cm 200*cm 5.05*cm G4_BRASS 
+:PLACE hb_abs_1 1 world R0 0.*cm 0.*cm 370.99*cm
+
+:VOLU hb_sci_2 BOX 200*cm 200*cm 0.37*cm G4_PLASTIC_SC_VINYLTOLUENE 
+:PLACE hb_sci_2 1 world R0 0.*cm 0.*cm 376.41*cm
+
+:VOLU hb_abs_2 BOX 200*cm 200*cm 5.05*cm G4_BRASS 
+:PLACE hb_abs_2 1 world R0 0.*cm 0.*cm 381.83*cm
+
+:VOLU hb_sci_3 BOX 200*cm 200*cm 0.37*cm G4_PLASTIC_SC_VINYLTOLUENE 
+:PLACE hb_sci_3 1 world R0 0.*cm 0.*cm 387.25*cm
+
+:VOLU hb_abs_3 BOX 200*cm 200*cm 5.05*cm G4_BRASS 
+:PLACE hb_abs_3 1 world R0 0.*cm 0.*cm 392.67*cm
+
+:VOLU hb_sci_4 BOX 200*cm 200*cm 0.37*cm G4_PLASTIC_SC_VINYLTOLUENE 
+:PLACE hb_sci_4 1 world R0 0.*cm 0.*cm 398.09*cm
+
+:VOLU hb_abs_4 BOX 200*cm 200*cm 5.05*cm G4_BRASS 
+:PLACE hb_abs_4 1 world R0 0.*cm 0.*cm 403.51*cm
+
+:VOLU hb_sci_5 BOX 200*cm 200*cm 0.37*cm G4_PLASTIC_SC_VINYLTOLUENE 
+:PLACE hb_sci_5 1 world R0 0.*cm 0.*cm 408.93*cm
+
+:VOLU hb_abs_5 BOX 200*cm 200*cm 5.05*cm G4_BRASS 
+:PLACE hb_abs_5 1 world R0 0.*cm 0.*cm 414.35*cm
+
+:VOLU hb_sci_6 BOX 200*cm 200*cm 0.37*cm G4_PLASTIC_SC_VINYLTOLUENE 
+:PLACE hb_sci_6 1 world R0 0.*cm 0.*cm 419.77*cm
+
+:VOLU hb_abs_6 BOX 200*cm 200*cm 5.05*cm G4_BRASS 
+:PLACE hb_abs_6 1 world R0 0.*cm 0.*cm 425.19*cm
+
+:VOLU hb_sci_7 BOX 200*cm 200*cm 0.37*cm G4_PLASTIC_SC_VINYLTOLUENE 
+:PLACE hb_sci_7 1 world R0 0.*cm 0.*cm 430.61*cm
+
+:VOLU hb_abs_7 BOX 200*cm 200*cm 5.05*cm G4_BRASS 
+:PLACE hb_abs_7 1 world R0 0.*cm 0.*cm 436.03*cm
+
+:VOLU hb_sci_8 BOX 200*cm 200*cm 0.37*cm G4_PLASTIC_SC_VINYLTOLUENE 
+:PLACE hb_sci_8 1 world R0 0.*cm 0.*cm 441.45*cm
+
+:VOLU hb_abs_8 BOX 200*cm 200*cm 5.05*cm G4_BRASS 
+:PLACE hb_abs_8 1 world R0 0.*cm 0.*cm 446.87*cm
+
+:VOLU hb_sci_9 BOX 200*cm 200*cm 0.37*cm G4_PLASTIC_SC_VINYLTOLUENE 
+:PLACE hb_sci_9 1 world R0 0.*cm 0.*cm 452.29*cm
+
+:VOLU hb_abs_9 BOX 200*cm 200*cm 5.65*cm G4_BRASS 
+:PLACE hb_abs_9 1 world R0 0.*cm 0.*cm 458.31*cm
+
+:VOLU hb_sci_10 BOX 200*cm 200*cm 0.37*cm G4_PLASTIC_SC_VINYLTOLUENE 
+:PLACE hb_sci_10 1 world R0 0.*cm 0.*cm 464.33*cm
+
+:VOLU hb_abs_10 BOX 200*cm 200*cm 5.65*cm G4_BRASS 
+:PLACE hb_abs_10 1 world R0 0.*cm 0.*cm 470.35*cm
+
+:VOLU hb_sci_11 BOX 200*cm 200*cm 0.37*cm G4_PLASTIC_SC_VINYLTOLUENE 
+:PLACE hb_sci_11 1 world R0 0.*cm 0.*cm 476.37*cm
+
+:VOLU hb_abs_11 BOX 200*cm 200*cm 5.65*cm G4_BRASS 
+:PLACE hb_abs_11 1 world R0 0.*cm 0.*cm 482.39*cm
+
+:VOLU hb_sci_12 BOX 200*cm 200*cm 0.37*cm G4_PLASTIC_SC_VINYLTOLUENE 
+:PLACE hb_sci_12 1 world R0 0.*cm 0.*cm 488.41*cm
+
+:VOLU hb_abs_12 BOX 200*cm 200*cm 5.65*cm G4_BRASS 
+:PLACE hb_abs_12 1 world R0 0.*cm 0.*cm 494.43*cm
+
+:VOLU hb_sci_13 BOX 200*cm 200*cm 0.37*cm G4_PLASTIC_SC_VINYLTOLUENE 
+:PLACE hb_sci_13 1 world R0 0.*cm 0.*cm 500.45*cm
+
+:VOLU hb_abs_13 BOX 200*cm 200*cm 5.65*cm G4_BRASS 
+:PLACE hb_abs_13 1 world R0 0.*cm 0.*cm 506.47*cm
+
+:VOLU hb_sci_14 BOX 200*cm 200*cm 0.37*cm G4_PLASTIC_SC_VINYLTOLUENE 
+:PLACE hb_sci_14 1 world R0 0.*cm 0.*cm 512.49*cm
+
+:VOLU hb_abs_14 BOX 200*cm 200*cm 5.65*cm G4_BRASS 
+:PLACE hb_abs_14 1 world R0 0.*cm 0.*cm 518.51*cm
+
+:VOLU hb_sci_15 BOX 200*cm 200*cm 0.37*cm G4_PLASTIC_SC_VINYLTOLUENE 
+:PLACE hb_sci_15 1 world R0 0.*cm 0.*cm 524.53*cm
+
+:VOLU hb_abs_15 BOX 200*cm 200*cm 7.5*cm G4_Fe 
+:PLACE hb_abs_15 1 world R0 0.*cm 0.*cm 532.4*cm
+
+:VOLU hb_sci_16 BOX 200*cm 200*cm 0.9*cm G4_PLASTIC_SC_VINYLTOLUENE 
+:PLACE hb_sci_16 1 world R0 0.*cm 0.*cm 540.8*cm
