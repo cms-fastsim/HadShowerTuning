@@ -9,7 +9,8 @@ For more information about the simulation, see comments in *FastSimulation/HadSh
 
 # How to install
 
-    # Create a fresh CMSSW area ( tested in CMSSW_8_1_0_pre3 and CMSSW_7_4_0)
+    # Create a fresh CMSSW area 
+    # ( tested in CMSSW_8_1_0_pre3 and CMSSW_7_4_0 for SCRAM_ARCH=slc6_amd64_gcc493)
     cmsrel CMSSW_A_B_C
     cd CMSSW_A_B_C/src
     cmsenv
