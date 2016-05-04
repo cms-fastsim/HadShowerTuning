@@ -72,23 +72,43 @@ it is fairly easy to modify the script according to your needs.
 
 Used units are GeV and cm.
 The output root file of each job contains one directory per generated shower.
-The content of each directory is as follows
+The content of each directory is as follows:
 
-| type      | name             | description                  | 
-|-----------|------------------|------------------------------|
-| TVector3	| primary_position | original position of primary |
-| TVector3	|primary_momentum  | original momentum of primary |
-| TVectorT\<double\> | primary_kinE | original kinetic energy of primary (first element) |	
-| TVectorT\<double\> | primary_pdgId | pdg id of primary (first element) |	
-| TVector3	| primary_endVertex_position | position of primary at end vertex |
-| TVector3	| primary_endVertex_momentum | momentum of primary at end vertex |
-| TVectorT\<double\>	| primary_endVertex_kine | kinetic energy of primary at end vertex (first element) |	
-| TVectorT\<double\>	| primary_endVertex_pdgId | pdg id of primary (first element) |
-| TH1F | longEProf_fineBin_mip | longitudinal energy profile of primary before first inelastic interaction, fine binning | 
-| TH1F | longEProf_fineBin_had | longitudinal energy profile of hadronic component of shower, fine binning | 
-| TH1F | longEProf_fineBin_pi0_1 | longitudinal energy profile of hardest pi0 in shower, fine binning |
-| TH1F | longEProf_fineBin_pi0_2 | longitudinal energy profile of 2nd hardest pi0 in shower, fine binning |
-| TH1F | longEProf_perLayer_mip | longitudinal energy profile of primary before first inelastic interaction, one bin per material layer | 
-| TH1F | longEProf_perLayer_had | longitudinal energy profile of hadronic component of shower, one bin per material layer |
-| TH1F | longEProf_perLayer_pi0_1 | longitudinal energy profile of hardest pi0 in shower, one bin per material layer |
-| TH1F | longEProf_perLayer_pi0_2 | longitudinal energy profile of 2nd hardest pi0 in shower, one bin per material layer | 
+**Properties of primary at several positions**
+
+The properties of the primary are stored at several positions:
+
+| position name | description |
+|---------------|-------------|
+| primary_* | original primary |
+| primary_endVertex_* | primary at end vertex |
+| primary_showerStart_* | primary at shower start |
+| ecalEntrance_* | primary at ecal entrance |
+| exalExit_* | primary at ecal exit |
+| hcalEntrance_* | primary at hcal entrance |
+
+The following properties are stored
+
+| property name | type | description                  | 
+|---------------|------|------------------------------|
+| *_position | TVector3	| position |
+| *_momentum | TVector3 | momentum |
+| *_kinE | TVectorT\<double\> | kinetic energy (first element) |	
+| *_pdgId | TVectorT\<double\> | pdg id (first element) |	
+
+**Longitudinal energy profiles**
+
+The following types of longitudinal energy profiles are stored:
+
+| name | type | description |
+|------|------|-------------|
+| longEProf_fineBin_* | TH1F | longitudinal energy profile, fine binning |
+| longEProf_perLayer_* | TH1F | longitudinal energy profile, one bin per material layer |
+
+For the following components of the energy depositions
+
+| *_mip | depositions of primary before shower start |
+| *_had | depositions of hadronic component of shower |
+| *_pi0_1 | depositions associated to hardest pi0 inside shower | 
+| *_pi0_2 | depositions associated to 2nd hardest pi0 inside shower | 
+
