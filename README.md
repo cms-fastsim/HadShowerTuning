@@ -70,26 +70,25 @@ it is fairly easy to modify the script according to your needs.
 
 # Data format
 
+Used units are GeV and cm.
 The output root file of each job contains one directory per generated shower.
 The content of each directory is as follows
 
 | type      | name             | description                  | 
 |-----------|------------------|------------------------------|
 | TVector3	| primary_position | original position of primary |
-
-
- KEY: TVector3	primary_momentum;1	A 3D physics vector
- KEY: TVectorT<double>	primary_kinE;1	
- KEY: TVectorT<double>	primary_pdgId;1	
- KEY: TVector3	primary_endVertex_position;1	A 3D physics vector
- KEY: TVector3	primary_endVertex_momentum;1	A 3D physics vector
- KEY: TVectorT<double>	primary_endVertex_kinE;1	
- KEY: TVectorT<double>	primary_endVertex_pdgId;1	
- KEY: TH1F	longEProf_fineBin_mip;1	longEProf_fineBin_mip
- KEY: TH1F	longEProf_fineBin_had;1	longEProf_fineBin_had
- KEY: TH1F	longEProf_fineBin_pi0_1;1	longEProf_fineBin_pi0_1
- KEY: TH1F	longEProf_fineBin_pi0_2;1	longEProf_fineBin_pi0_2
- KEY: TH1F	longEProf_perLayer_mip;1	longEProf_perLayer_mip
- KEY: TH1F	longEProf_perLayer_had;1	longEProf_perLayer_had
- KEY: TH1F	longEProf_perLayer_pi0_1;1	longEProf_perLayer_pi0_1
- KEY: TH1F	longEProf_perLayer_pi0_2;1	longEProf_perLayer_pi0_2
+| TVector3	|primary_momentum  | original momentum of primary |
+| TVectorT<double> | primary_kinE | original kinetic energy of primary (first element) |	
+| TVectorT<double> | primary_pdgId | pdg id of primary (first element) |	
+| TVector3	| primary_endVertex_position | position of primary at end vertex |
+| TVector3	| primary_endVertex_momentum | momentum of primary at end vertex |
+| TVectorT\<double\>	| primary_endVertex_kine | kinetic energy of primary at end vertex (first element) |	
+| TVectorT\<double\>	| primary_endVertex_pdgId | pdg id of primary (first element) |
+| TH1F | longEProf_fineBin_mip | longitudinal energy profile of primary before first inelastic interaction, fine binning | 
+| TH1F | longEProf_fineBin_had | longitudinal energy profile of hadronic component of shower, fine binning | 
+| TH1F | longEProf_fineBin_pi0_1 | longitudinal energy profile of hardest pi0 in shower, fine binning |
+| TH1F | longEProf_fineBin_pi0_2 | longitudinal energy profile of 2nd hardest pi0 in shower, fine binning |
+| TH1F | longEProf_perLayer_mip | longitudinal energy profile of primary before first inelastic interaction, one bin per material layer | 
+| TH1F | longEProf_perLayer_had | longitudinal energy profile of hadronic component of shower, one bin per material layer |
+| TH1F | longEProf_perLayer_pi0_1 | longitudinal energy profile of hardest pi0 in shower, one bin per material layer |
+| TH1F | longEProf_perLayer_pi0_2 | longitudinal energy profile of 2nd hardest pi0 in shower, one bin per material layer | 
