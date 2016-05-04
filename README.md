@@ -107,6 +107,8 @@ The following types of longitudinal energy profiles are stored:
 
 For the following components of the energy depositions
 
+| name | description |
+|------|-------------|
 | *_mip | depositions of primary before shower start |
 | *_had | depositions of hadronic component of shower |
 | *_pi0_1 | depositions associated to hardest pi0 inside shower | 
