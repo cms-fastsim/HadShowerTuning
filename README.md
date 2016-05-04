@@ -78,8 +78,8 @@ The content of each directory is as follows
 |-----------|------------------|------------------------------|
 | TVector3	| primary_position | original position of primary |
 | TVector3	|primary_momentum  | original momentum of primary |
-| TVectorT<double> | primary_kinE | original kinetic energy of primary (first element) |	
-| TVectorT<double> | primary_pdgId | pdg id of primary (first element) |	
+| TVectorT\<double\> | primary_kinE | original kinetic energy of primary (first element) |	
+| TVectorT\<double\> | primary_pdgId | pdg id of primary (first element) |	
 | TVector3	| primary_endVertex_position | position of primary at end vertex |
 | TVector3	| primary_endVertex_momentum | momentum of primary at end vertex |
 | TVectorT\<double\>	| primary_endVertex_kine | kinetic energy of primary at end vertex (first element) |	
