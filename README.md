@@ -67,3 +67,29 @@ More information about the geometry files can be found in the script.
 
 In case you wish to use an alternative geometry, 
 it is fairly easy to modify the script according to your needs.
+
+# Data format
+
+The output root file of each job contains one directory per generated shower.
+The content of each directory is as follows
+
+| type      | name             | description                  | 
+|-----------|------------------|------------------------------|
+| TVector3	| primary_position | original position of primary |
+
+
+ KEY: TVector3	primary_momentum;1	A 3D physics vector
+ KEY: TVectorT<double>	primary_kinE;1	
+ KEY: TVectorT<double>	primary_pdgId;1	
+ KEY: TVector3	primary_endVertex_position;1	A 3D physics vector
+ KEY: TVector3	primary_endVertex_momentum;1	A 3D physics vector
+ KEY: TVectorT<double>	primary_endVertex_kinE;1	
+ KEY: TVectorT<double>	primary_endVertex_pdgId;1	
+ KEY: TH1F	longEProf_fineBin_mip;1	longEProf_fineBin_mip
+ KEY: TH1F	longEProf_fineBin_had;1	longEProf_fineBin_had
+ KEY: TH1F	longEProf_fineBin_pi0_1;1	longEProf_fineBin_pi0_1
+ KEY: TH1F	longEProf_fineBin_pi0_2;1	longEProf_fineBin_pi0_2
+ KEY: TH1F	longEProf_perLayer_mip;1	longEProf_perLayer_mip
+ KEY: TH1F	longEProf_perLayer_had;1	longEProf_perLayer_had
+ KEY: TH1F	longEProf_perLayer_pi0_1;1	longEProf_perLayer_pi0_1
+ KEY: TH1F	longEProf_perLayer_pi0_2;1	longEProf_perLayer_pi0_2
