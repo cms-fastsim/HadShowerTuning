@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 # Define a calorimeter geometry in asci format
-# Calorimeter layers are square shaped layers
+# Calorimeter layers are square prisms
 # The sides of the square are parallel to the x-axis and y-axis
 # and have a lenght defined by the variable (layerDXY).
 # All layers are perpendicular to the z-axis.
