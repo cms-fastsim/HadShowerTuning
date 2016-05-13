@@ -114,3 +114,14 @@ For the following components of the energy depositions
 | *_pi0_1 | depositions associated to hardest pi0 inside shower | 
 | *_pi0_2 | depositions associated to 2nd hardest pi0 inside shower | 
 
+# Internal data format
+
+During the running of geant4, data is collected in a container of type hadshowertuning::Data
+
+Good to know:
+   * the primary is the first particle in the particle list of hadshowertuning::Data, i.e. it properties are stored as data.particle_*[0]
+   * if and only if a hadronic shower takes place, the particle list has more than one entry
+   * the first particles after the primary are the particles produced in the first inelastic interaction of the shower
+   * to obtain the position of the first hadronic inelast interaction of the shower (i.e. the shower start): data.particle_{x,y,z}[1] 
+   * hits with hit_particleIndex[i] == 0 are associated directly to the primary, i.e. the do not belong to the shower
+   * hits with hit_particleIndex[i] != 0 are always part of the shower
